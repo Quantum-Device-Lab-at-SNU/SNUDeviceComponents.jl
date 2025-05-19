@@ -1,6 +1,7 @@
 module SNUDeviceComponents
 using DeviceLayout
-export Components, Logos
+import DeviceLayout: μm, nm
+export Components, Logos, μm, nm
 
 include("logos/logos.jl")
 include("components/components.jl")

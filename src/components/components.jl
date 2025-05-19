@@ -3,7 +3,9 @@ module Components
 import DeviceLayout: AbstractCoordinateSystem, Coordinate, Meta
 using DeviceLayout
 
-export grayscale_bridge!
+export grayscale_bridge!, cross_marker!, ell_marker!
+
+include("alignment_markers.jl")
 
 """
     grayscale_bridge!(
