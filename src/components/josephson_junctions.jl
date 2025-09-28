@@ -23,7 +23,7 @@ function layerpixels!(c::CoordinateSystem{T}, layers::AbstractMatrix{Int}, pixsi
 end
 
 """
-    jj!{T}(c::Cell{T}, m, b, w1, w2, w3, w4, l1, l2, l3, l4, uc, t1, Θ, ϕ,
+    jj!{T}(c::CoordinateSystem{T}, m, b, w1, w2, w3, w4, l1, l2, l3, l4, uc, t1, Θ, ϕ,
         jj_meta::Meta, uc_meta::Meta)
 Explanation of parameters:
 
