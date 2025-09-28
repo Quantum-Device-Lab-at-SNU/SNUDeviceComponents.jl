@@ -16,4 +16,4 @@ foot_height = 10.0μm
 span = 40.0μm
 metas = GDSMeta.(range(0, 10))
 
-Components.grayscale_bridge!(c, steps, foot_width, foot_height, span, metas)
+Components.AirBridge.grayscale_bridge!(c, steps, foot_width, foot_height, span, metas)

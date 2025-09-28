@@ -1,7 +1,8 @@
 # Functions useful for ExamplePDK but not suitable/ready for base DeviceLayout/SchematicDrivenLayout
 
 module Utils
-
+using DeviceLayout
+import DeviceLayout: Coordinate
 """
     generate_undercut(ps::AbstractArray{<:Polygon{T}}, luc, ruc, uuc, duc; α=0°) where {T<:Coordinate}
 
