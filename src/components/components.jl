@@ -18,6 +18,9 @@ using .AirBridge
 include("jj/jj.jl")
 using .JosephsonJunction
 
+include("logo/logo.jl")
+using .Logo
+
 export grayscale_bridge!, cross_marker!, ell_marker!, cpw_resonator!
 
 end # end of module

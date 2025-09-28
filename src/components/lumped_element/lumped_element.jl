@@ -2,6 +2,7 @@ module LumpedElement
 
 using DeviceLayout
 import DeviceLayout: Coordinate, CoordinateSystem, Meta
+import Unitful: unit
 
 """
     meander_wire_path!(p::Path{T}, t, s, n::Int, leg, r, lead; first_turn=:right) where {T<:Coordinate}
@@ -117,13 +118,13 @@ end
 
 
 """
-    meander_inductor!(c::CoordinateSystem{T}, clearance, t, s, n::Int, leg, r, lead, meta; first_turn=:right) where {T<:Coordinate}
+    meander_inductor!(c::Cell{T}, clearance, t, s, n::Int, leg, r, lead, meta; first_turn=:right) where {T<:Coordinate}
 
 Generate a **negatively-defined meander inductor** within the given `Cell` by subtracting
 the drawn wire geometry from a rectangular ground opening.
 
 # Arguments
-- `c::CoordinateSystem{T}`: Target cell where the final meander inductor (negative definition) will be added.
+- `c::Cell{T}`: Target cell where the final meander inductor (negative definition) will be added.
 - `clearance`: Vertical clearance (opening height) of the ground rectangle that accommodates the meander.
 - `t`: Trace width of the meander wire.
 - `s`: Spacing (gap) between adjacent meander legs.
@@ -156,7 +157,7 @@ the drawn wire geometry from a rectangular ground opening.
   outside of the opening.
 """
 function meander_inductor!(
-    c::CoordinateSystem{T},
+    c::Cell{T},
     clearance, t, s, n::Int, leg, r, lead, meta::Meta;
     first_turn=:right, clearance_corner_r=zero(T)) where {T<:Coordinate}
 

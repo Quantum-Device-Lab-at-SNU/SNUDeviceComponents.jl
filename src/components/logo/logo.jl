@@ -1,4 +1,4 @@
-module Logos
+module Logo
 
 using DeviceLayout
 import DeviceLayout: Coordinate, AbstractCoordinateSystem
