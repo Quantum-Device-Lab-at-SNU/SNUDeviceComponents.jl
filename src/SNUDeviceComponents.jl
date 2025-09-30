@@ -6,9 +6,6 @@ export Components, Logos, μm, nm
 include("utils.jl")
 import .Utils
 
-include("logos/logos.jl")
-import .Logos
-
 include("components/components.jl")
 import .Components
 

@@ -1,13 +1,13 @@
 name = "SNUDeviceComponents"
 uuid = "6442943e-1486-4d76-a227-88c5c85c7af6"
+license = "MIT"
 authors = ["Eunjong Kim <ekim7206@gmail.com>"]
 version = "0.1.0"
-license = "MIT"
 
 [deps]
 DeviceLayout = "ebf59a4a-04ec-49d7-8cd4-c9382ceb8e85"
 FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
 
 [compat]
-DeviceLayout = "1.2.0"
+DeviceLayout = "1.4.2"
 FileIO = "1.17.0"
